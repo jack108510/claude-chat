@@ -58,6 +58,7 @@ export default function Home() {
         <div className={styles.headerInner}>
           <span className={styles.logo}>◆</span>
           <span className={styles.title}>Claude</span>
+          <a href="/terminal" className={styles.terminalLink}>Terminal →</a>
         </div>
       </header>
 
