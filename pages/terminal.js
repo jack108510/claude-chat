@@ -34,7 +34,7 @@ export default function Terminal() {
       term.open(termRef.current);
       fitAddon.fit();
 
-      const wsUrl = BRIDGE_URL.replace(/^http/, 'ws') + `?token=${encodeURIComponent(BRIDGE_PASSWORD)}`;
+      const wsUrl = BRIDGE_URL.replace(/^http/, 'ws') + `?token=${encodeURIComponent(BRIDGE_PASSWORD)}&ngrok-skip-browser-warning=true`;
       const ws = new WebSocket(wsUrl);
       wsRef.current = ws;
 
